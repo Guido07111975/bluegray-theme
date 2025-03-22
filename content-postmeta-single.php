@@ -10,7 +10,7 @@
 		esc_html__( 'Category: %s', 'bluegray' ),
 		get_the_category_list( __( ', ', 'bluegray' ) )
 	); ?>
-	<?php if(has_tag() ) : ?>
+	<?php if ( has_tag() ) : ?>
 		<?php echo '|'; ?>
 		<?php printf(
 			/* translators: %s: tag. */
@@ -19,7 +19,7 @@
 		); ?>
 	<?php endif; ?>
 	<?php $format = get_post_format(); ?>
-	<?php if (has_post_format() ) : ?>
+	<?php if ( has_post_format() ) : ?>
 		<?php echo '|'; ?>
 		<?php printf(
 			/* translators: %s: format. */

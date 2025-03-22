@@ -31,7 +31,7 @@
 	} ?>
 	<?php if ( get_theme_mod( 'bluegray_read_more' ) != 'no' ) { ?>
 		<div class="more">
-			<a class="read-more" href="<?php the_permalink() ?>" rel="bookmark"><?php echo esc_html( $read_more_label ); ?><span class="screen-reader-text"><?php the_title(); ?></span></a>
+			<a class="read-more" href="<?php the_permalink(); ?>" rel="bookmark"><?php echo esc_html( $read_more_label ); ?><span class="screen-reader-text"><?php the_title(); ?></span></a>
 		</div>
 	<?php } ?>
 </article>
