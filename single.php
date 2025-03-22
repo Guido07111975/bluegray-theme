@@ -14,7 +14,7 @@
 			<?php get_template_part( 'content-postmeta' ); ?>
 
 			<div class="entry-content post-content">
-				<?php if ( get_theme_mod( 'bluegray_post_image' ) == "yes" ) {
+				<?php if ( get_theme_mod( 'bluegray_post_image' ) == 'yes' ) {
 					if ( has_post_thumbnail() ) {
 						the_post_thumbnail( 'post-thumbnail', array( 'class' => 'single-image' ) );
 					}

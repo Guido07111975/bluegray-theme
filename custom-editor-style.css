@@ -52,7 +52,7 @@ sup {vertical-align:super; font-size:0.9em;}
 ins, mark {font-weight:bold; background:none; text-decoration:none; color:#21759b;}
 cite, em, abbr, acronym {font-style:italic;}
 code, kbd, samp, var {font-family:monospace, monospace;}
-pre {margin:0 0 10px; padding:5px 10px; white-space:pre-wrap; background:#f8f8f8;}
+pre {font-family:monospace, monospace; white-space:pre-wrap;}
 blockquote, q {margin:0 0 10px; padding:0 0 0 20px; display:block; font-size:1.2em; font-style:italic; border-left:2px solid #999;}
 address {margin:0 0 10px; font-style:italic;}
 p {margin:0 0 10px;}

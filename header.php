@@ -38,12 +38,12 @@
 					<img src='<?php echo esc_url( get_theme_mod( 'bluegray_logo' ) ); ?>' <?php echo $logo_width; ?> class="site-logo-img" alt='<?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?>'></a>
 				</div>
 			<?php endif; ?>
-			<?php if ( ( get_theme_mod( 'bluegray_site_title' ) != "no" ) || ( get_theme_mod( 'bluegray_tagline' ) != "no" ) ) : ?>
+			<?php if ( ( get_theme_mod( 'bluegray_site_title' ) != 'no' ) || ( get_theme_mod( 'bluegray_tagline' ) != 'no' ) ) : ?>
 				<div class="site-title-tagline">
-					<?php if ( get_theme_mod( 'bluegray_site_title' ) != "no" ) : ?>
+					<?php if ( get_theme_mod( 'bluegray_site_title' ) != 'no' ) : ?>
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 					<?php endif; ?>
-					<?php if ( get_theme_mod( 'bluegray_tagline' ) != "no" ) : ?>
+					<?php if ( get_theme_mod( 'bluegray_tagline' ) != 'no' ) : ?>
 						<?php if ( get_bloginfo( 'description' ) ) : ?>
 							<div class="site-tagline"><?php bloginfo( 'description' ); ?></div>
 						<?php endif; ?>
@@ -69,7 +69,7 @@
 				</div>
 			</div>
 		<?php endif; ?>
-		<?php if ( is_front_page() || ( !is_front_page() && ( get_theme_mod( 'bluegray_header_image' ) == "no" ) ) ) { ?>
+		<?php if ( is_front_page() || ( !is_front_page() && ( get_theme_mod( 'bluegray_header_image' ) == 'no' ) ) ) { ?>
 			<?php if ( get_header_image() ) { ?>
 				<img src="<?php echo get_header_image(); ?>" class="header-img" alt="<?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?>" />
 			<?php } ?>
