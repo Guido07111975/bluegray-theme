@@ -25,8 +25,8 @@
 			/* translators: %s: format. */
 			esc_html__( 'Format: %s', 'bluegray' ),
 			sprintf( '<a href="%1$s">%2$s</a>',
-				get_post_format_link( $format ),
-				get_post_format_string( $format )
+				esc_url( get_post_format_link( $format ) ),
+				esc_html( get_post_format_string( $format ) )
 			)
 		); ?>
 	<?php endif; ?>

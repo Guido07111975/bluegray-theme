@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: Full Width Template
+ * Template Name: No Sidebar Template
  * Description: Template without sidebar
  * Template Post Type: post
  */
