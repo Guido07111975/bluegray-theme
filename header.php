@@ -34,8 +34,8 @@
 					$logo_width = '';
 				} ?>
 				<div class="site-logo">
-					<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'>
-					<img src='<?php echo esc_url( get_theme_mod( 'bluegray_logo' ) ); ?>' <?php echo $logo_width; ?> class="site-logo-img" alt='<?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?>'></a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<img src="<?php echo esc_url( get_theme_mod( 'bluegray_logo' ) ); ?>" <?php echo wp_strip_all_tags( $logo_width, true ); ?> class="site-logo-img" alt="<?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?>"></a>
 				</div>
 			<?php endif; ?>
 			<?php if ( ( get_theme_mod( 'bluegray_site_title' ) != 'no' ) || ( get_theme_mod( 'bluegray_tagline' ) != 'no' ) ) : ?>

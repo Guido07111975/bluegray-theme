@@ -185,7 +185,7 @@ add_filter( 'excerpt_length', 'bluegray_excerpt_length', 999 );
 
 // Theme Customizer
 function bluegray_theme_customizer( $wp_customize ) {
-	$wp_customize->add_section( 'bluegray_logo_section' , array(
+	$wp_customize->add_section( 'bluegray_logo_section', array(
 		'title' => __( 'Logo', 'bluegray' ),
 		'priority' => 30,
 	) );
@@ -214,7 +214,7 @@ function bluegray_theme_customizer( $wp_customize ) {
 			'step' => 20,
 		),
 	) ) );
-	$wp_customize->add_section( 'bluegray_mobile_section' , array(
+	$wp_customize->add_section( 'bluegray_mobile_section', array(
 		'title' => __( 'Mobile', 'bluegray' ),
 		'priority' => 31,
 	) );
@@ -230,7 +230,7 @@ function bluegray_theme_customizer( $wp_customize ) {
 			'placeholder' => __( 'Menu', 'bluegray' ).' &#43;',
 		),
 	) ) );
-	$wp_customize->add_section( 'bluegray_blog_section' , array(
+	$wp_customize->add_section( 'bluegray_blog_section', array(
 		'title' => __( 'Blog', 'bluegray' ),
 		'priority' => 32,
 	) );
@@ -327,7 +327,7 @@ function bluegray_theme_customizer( $wp_customize ) {
 			'no' => __('No', 'bluegray'),
 		),
 	) ) );
-	$wp_customize->add_section( 'bluegray_footer_section' , array(
+	$wp_customize->add_section( 'bluegray_footer_section', array(
 		'title' => __( 'Footer', 'bluegray' ),
 		'priority' => 33,
 	) );
