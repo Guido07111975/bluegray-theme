@@ -7,8 +7,8 @@ Requires at least: 5.2
 Tested up to: 6.7
 Author: Guido
 Author URI: https://www.guido.site
-Description: BlueGray is a lightweight and mobile friendly WordPress theme. A full width template for posts and pages and multiple widget areas are included. For theme settings go to the Customizer in your dashboard.
-Tags: one-column, two-columns, right-sidebar, full-width-template, custom-background, custom-header, custom-menu, featured-images, footer-widgets, post-formats, sticky-post, blog, editor-style, microformats, translation-ready
+Description: BlueGray is a lightweight and mobile friendly WordPress theme. A post and page template with or without sidebar and multiple widget areas are included. For theme settings go to the Customizer in your dashboard.
+Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, featured-images, footer-widgets, post-formats, sticky-post, blog, editor-style, microformats, translation-ready
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: bluegray
@@ -66,7 +66,6 @@ html {-webkit-text-size-adjust:100%;}
 body {background:#eee; color:#333; font-family:Verdana, Arial, sans-serif; font-size:16px; line-height:1.5; text-align:left; word-wrap:break-word;}
 
 /* CONTAINER */
-#container {}
 
 /* CLEARINGS */
 #header-first:after, #header-second:after, #homepage-widgets:after, #main-content:after, .post-content:after, .page-content:after, .post-nav:after, .comment:after, .comment-nav:after, #footer-widgets:after {content:''; display:block; height:0; clear:both;}
@@ -142,8 +141,6 @@ button {font-size:inherit; font-weight:normal; font-family:inherit;}
 
 /* HEADER FIRST LOGO */
 .logo {text-align:center;}
-.site-logo {}
-.site-logo-img {}
 .site-title-tagline {clear:both;}
 .site-title {margin:0;}
 .site-title a:hover {text-decoration:none; color:#333;}
@@ -210,7 +207,7 @@ button {font-size:inherit; font-weight:normal; font-family:inherit;}
 .post-title a:hover {text-decoration:none; color:#333;}
 .post-content {padding:0 0 20px;}
 .sticky-title {margin:0 0 10px; font-weight:bold; font-style:italic;}
-.post-metadata {clear:both; margin:0 0 20px; padding:5px 10px; border:1px solid #ddd;}
+.post-meta {clear:both; margin:0 0 20px; padding:5px 10px; border:1px solid #ddd;}
 
 /* READ MORE */
 .more {clear:both; padding:0 0 20px; text-align:right;}
@@ -218,7 +215,7 @@ a.read-more {display:inline-block; padding:5px; background:#00aaff; color:#fff; 
 a.read-more:hover {background:#333; text-decoration:none;}
 
 /* POST FORMATS */
-.format-aside .post-metadata, .format-image .post-metadata, .format-video .post-metadata, .format-gallery .post-metadata, .format-audio .post-metadata {font-style:italic;}
+.format-aside .post-meta, .format-image .post-meta, .format-video .post-meta, .format-gallery .post-meta, .format-audio .post-meta {font-style:italic;}
 
 /* POST NAV */
 .post-nav {clear:both;}

@@ -16,8 +16,8 @@ if ( post_password_required() )
 				<?php printf(
 					/* translators: 1: number of comments, 2: post title. */
 					esc_html( _n( '%1$s comment on %2$s', '%1$s comments on %2$s', get_comments_number(), 'bluegray' ) ),
-					number_format_i18n( get_comments_number() ),
-					get_the_title()
+					esc_html( number_format_i18n( get_comments_number() ) ),
+					esc_html( get_the_title() )
 				); ?>
 			</h3>
 

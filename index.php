@@ -29,7 +29,7 @@
 			<?php previous_posts_link(); ?>
 		</div>
 
-	<?php else: ?>
+	<?php else : ?>
 		<?php get_template_part( 'content-none' ); ?>
 
 	<?php endif; ?>

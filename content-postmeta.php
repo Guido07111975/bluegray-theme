@@ -4,7 +4,7 @@
  */
 ?>
 
-<div class="post-metadata">
+<div class="post-meta">
 	<?php printf(
 		/* translators: %s: post date. */
 		esc_html__( 'Posted on %s', 'bluegray' ),

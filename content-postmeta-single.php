@@ -4,7 +4,7 @@
  */
 ?>
 
-<div class="post-metadata post-metadata-bottom">
+<div class="post-meta post-meta-bottom">
 	<?php printf(
 		/* translators: %s: category. */
 		esc_html__( 'Category: %s', 'bluegray' ),
