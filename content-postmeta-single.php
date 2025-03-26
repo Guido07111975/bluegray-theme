@@ -8,14 +8,14 @@
 	<?php printf(
 		/* translators: %s: category. */
 		esc_html__( 'Category: %s', 'bluegray' ),
-		get_the_category_list( __( ', ', 'bluegray' ) )
+		esc_html( get_the_category_list( __( ', ', 'bluegray' ) ) )
 	); ?>
 	<?php if ( has_tag() ) : ?>
 		<?php echo '|'; ?>
 		<?php printf(
 			/* translators: %s: tag. */
 			esc_html__( 'Tag: %s', 'bluegray' ),
-			get_the_tag_list( '', __( ', ', 'bluegray' ) )
+			esc_html( get_the_tag_list( '', __( ', ', 'bluegray' ) ) )
 		); ?>
 	<?php endif; ?>
 	<?php $format = get_post_format(); ?>

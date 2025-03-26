@@ -35,7 +35,7 @@
 				} ?>
 				<div class="site-logo">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<img src="<?php echo esc_url( get_theme_mod( 'bluegray_logo' ) ); ?>" <?php echo wp_strip_all_tags( $logo_width, true ); ?> class="site-logo-img" alt="<?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+					<img src="<?php echo esc_url( get_theme_mod( 'bluegray_logo' ) ); ?>" <?php echo esc_attr( wp_strip_all_tags( $logo_width, true ) ); ?> class="site-logo-img" alt="<?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?>"></a>
 				</div>
 			<?php endif; ?>
 			<?php if ( ( get_theme_mod( 'bluegray_site_title' ) != 'no' ) || ( get_theme_mod( 'bluegray_tagline' ) != 'no' ) ) : ?>
@@ -71,7 +71,7 @@
 		<?php endif; ?>
 		<?php if ( is_front_page() || ( ! is_front_page() && ( get_theme_mod( 'bluegray_header_image' ) == 'no' ) ) ) { ?>
 			<?php if ( get_header_image() ) { ?>
-				<img src="<?php echo get_header_image(); ?>" class="header-img" alt="<?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?>" />
+				<img src="<?php echo esc_url( get_header_image() ); ?>" class="header-img" alt="<?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?>" />
 			<?php } ?>
 		<?php } ?>
 	</div>
