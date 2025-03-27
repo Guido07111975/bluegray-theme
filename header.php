@@ -71,7 +71,7 @@
 		<?php endif; ?>
 		<?php if ( is_front_page() || ( ! is_front_page() && ( get_theme_mod( 'bluegray_header_image' ) == 'no' ) ) ) { ?>
 			<?php if ( get_header_image() ) { ?>
-				<img src="<?php echo esc_url( get_header_image() ); ?>" class="header-img" alt="<?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?>" />
+				<img src="<?php echo get_header_image(); ?>" class="header-img" alt="<?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?>" />
 			<?php } ?>
 		<?php } ?>
 	</div>
