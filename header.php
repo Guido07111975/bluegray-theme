@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
-		<link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
 	<?php wp_head(); ?>
 </head>
@@ -71,7 +71,7 @@
 		<?php endif; ?>
 		<?php if ( is_front_page() || ( ! is_front_page() && ( get_theme_mod( 'bluegray_header_image' ) == 'no' ) ) ) { ?>
 			<?php if ( get_header_image() ) { ?>
-				<img src="<?php echo get_header_image(); ?>" class="header-img" alt="<?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?>" />
+				<img src="<?php echo get_header_image(); ?>" class="header-img" alt="bloginfo( 'name', 'display' ); ?>" />
 			<?php } ?>
 		<?php } ?>
 	</div>
