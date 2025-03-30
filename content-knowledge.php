@@ -25,7 +25,8 @@ if ( ! empty( $myknowledgebase_cats ) && ! is_wp_error( $myknowledgebase_cats ) 
 			$count = '';
 		endif;
 		echo '<li class="cat-list '.esc_attr( $myknowledgebase_cat->slug ).'">';
-			echo '<div class="cat-name"><a href="'.esc_url( get_category_link( $myknowledgebase_cat->cat_ID ) ).'" title="'.esc_attr( $myknowledgebase_cat->name ).'" >'.esc_html( $myknowledgebase_cat->name ).'</a> '.$count.'</div>'; // phpcs:ignore
+			// phpcs:ignore
+			echo '<div class="cat-name"><a href="'.esc_url( get_category_link( $myknowledgebase_cat->cat_ID ) ).'" title="'.esc_attr( $myknowledgebase_cat->name ).'" >'.esc_html( $myknowledgebase_cat->name ).'</a> '.$count.'</div>';
 			if ( get_theme_mod( 'myknowledgebase_cat_description' ) == 'yes' ) :
 				if ( category_description( $myknowledgebase_cat->cat_ID ) ) :
 					echo '<div class="cat-description">'.wp_kses_post( category_description( $myknowledgebase_cat->cat_ID ) ).'</div>';
