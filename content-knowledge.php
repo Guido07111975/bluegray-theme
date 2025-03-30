@@ -67,7 +67,7 @@ if ( ! empty( $myknowledgebase_cats ) && ! is_wp_error( $myknowledgebase_cats ) 
 						$post_title = get_the_title( $myknowledgebase_post->ID );
 					endif;
 					$slug = str_replace( ' ', '-', strtolower( $post_title ) );
-					echo '<li class="cat-post '.esc_attr( $slug ).'"><a class="cat-post-name" href="'.get_permalink( $myknowledgebase_post->ID ).'" rel="bookmark" title="'.esc_html( $post_title ).'">'.esc_html( $post_title ).'</a>';
+					echo '<li class="cat-post '.esc_attr( $slug ).'"><a class="cat-post-name" href="'.esc_url( get_permalink( $myknowledgebase_post->ID ) ).'" rel="bookmark" title="'.esc_html( $post_title ).'">'.esc_html( $post_title ).'</a>';
 					if ( get_theme_mod( 'myknowledgebase_post_meta' ) == 'yes' ) :
 						echo '<div class="cat-post-meta">';
 						echo '<span class="cat-post-meta-date"><a href="'.esc_url( get_permalink( $myknowledgebase_post->ID ) ).'">'.esc_html( get_the_date( get_option( 'date_format' ), $myknowledgebase_post->ID ) ).'</a></span>';
@@ -84,7 +84,7 @@ if ( ! empty( $myknowledgebase_cats ) && ! is_wp_error( $myknowledgebase_cats ) 
 				else :
 					$view_all_label = __( 'View All', 'myknowledgebase' ).' &raquo;';
 				endif;
-				echo '<div class="cat-view-all"><a href="'.esc_url( get_category_link( $myknowledgebase_cat->cat_ID ) ).'" title="'.$myknowledgebase_cat->name.'" >'.esc_html( $view_all_label ).'</a></div>';
+				echo '<div class="cat-view-all"><a href="'.esc_url( get_category_link( $myknowledgebase_cat->cat_ID ) ).'" title="'.esc_attr( $myknowledgebase_cat->name ).'" >'.esc_html( $view_all_label ).'</a></div>';
 			endif;
 		echo '</li>';
 	endforeach;
