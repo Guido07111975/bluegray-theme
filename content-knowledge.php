@@ -61,13 +61,13 @@ if ( ! empty( $myknowledgebase_cats ) && ! is_wp_error( $myknowledgebase_cats ) 
 			$myknowledgebase_posts = get_posts( $myknowledgebase_post_args );
 			echo '<ul class="cat-post-list">';
 				foreach( $myknowledgebase_posts AS $myknowledgebase_post ) :
-					if ( get_the_title( $myknowledgebase_post->ID ) == false ) : // phpcs:ignore
-						$title = __( '(no title)', 'myknowledgebase' );
+					if ( get_the_title( $myknowledgebase_post->ID ) == false ) :
+						$post_title = __( '(no title)', 'myknowledgebase' );
 					else :
-						$title = get_the_title( $myknowledgebase_post->ID ); // phpcs:ignore
+						$post_title = get_the_title( $myknowledgebase_post->ID );
 					endif;
-					$slug = str_replace( ' ', '-', strtolower( $title ) );
-					echo '<li class="cat-post '.esc_attr( $slug ).'"><a class="cat-post-name" href="'.get_permalink( $myknowledgebase_post->ID ).'" rel="bookmark" title="'.esc_html( $title ).'">'.esc_html( $title ).'</a>';
+					$slug = str_replace( ' ', '-', strtolower( $post_title ) );
+					echo '<li class="cat-post '.esc_attr( $slug ).'"><a class="cat-post-name" href="'.get_permalink( $myknowledgebase_post->ID ).'" rel="bookmark" title="'.esc_html( $post_title ).'">'.esc_html( $post_title ).'</a>';
 					if ( get_theme_mod( 'myknowledgebase_post_meta' ) == 'yes' ) :
 						echo '<div class="cat-post-meta">';
 						echo '<span class="cat-post-meta-date"><a href="'.esc_url( get_permalink( $myknowledgebase_post->ID ) ).'">'.esc_html( get_the_date( get_option( 'date_format' ), $myknowledgebase_post->ID ) ).'</a></span>';
