@@ -1,13 +1,13 @@
 /*
 Theme Name: BlueGray
 Theme URI: https://www.guido.site/themes
-Version: 7.8
+Version: 7.9
 Requires PHP: 7.0
 Requires at least: 5.2
 Tested up to: 6.7
 Author: Guido
 Author URI: https://www.guido.site
-Description: BlueGray is a lightweight and mobile friendly WordPress theme. A post and page template with or without sidebar and multiple widget areas are included. For theme settings go to the Customizer in your dashboard.
+Description: BlueGray is a lightweight and mobile friendly WordPress theme. A post and page template with or without sidebar is included, as well as multiple widget areas. For theme settings go to the Customizer in your dashboard.
 Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, featured-images, footer-widgets, post-formats, sticky-post, blog, editor-style, microformats, translation-ready
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -190,7 +190,7 @@ button {font-size:inherit; font-weight:normal; font-family:inherit;}
 #main-content {clear:both;}
 
 /* PAGE AND POST CONTENT AREA */
-#content {width:66%; float:left; padding:0 0 20px;}
+#content {width:68%; float:left; padding:0 0 20px;}
 #content-full {padding:0 0 20px;}
 
 /* PAGE */
@@ -274,7 +274,7 @@ img.aligncenter {clear:both; display:block; margin:0.4em auto 0.4em auto;}
 .comment-next {float:right; padding:10px 0;}
 
 /* SIDEBAR */
-#sidebar {width:32%; float:right;}
+#sidebar {width:30%; float:right;}
 
 /* WIDGETS */
 .widget {margin:0 0 20px; padding:15px 20px; background:#f8f8f8; border:1px solid #ddd;}
@@ -313,7 +313,7 @@ img.aligncenter {clear:both; display:block; margin:0.4em auto 0.4em auto;}
 	.mobile-nav .sub-menu li {margin:0 0 0 20px;}
 
 	/* HEADER SECOND HEADER IMAGE */
-	.header-img {padding:0 0 40px;}
+	.header-img {min-height:150px; object-fit:cover; padding:0 0 40px;}
 
 	/* MAIN CONTENT CONTAINER */
 	#main {padding:0 20px;} 
