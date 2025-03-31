@@ -8,7 +8,7 @@ function bluegray_setup() {
 	// Set max content width for img, video, and more
 	global $content_width;
 	if ( ! isset( $content_width ) )
-	$content_width = 760;
+	$content_width = 780;
 
 	// Register Menu
 	register_nav_menus( array(
@@ -156,23 +156,23 @@ add_action( 'widgets_init', 'bluegray_widgets_init' );
 function bluegray_post_next() {
 	return 'class="nav-next"';
 }
-add_filter('next_posts_link_attributes', 'bluegray_post_next', 999);
+add_filter( 'next_posts_link_attributes', 'bluegray_post_next', 999 );
 
 function bluegray_post_prev() {
 	return 'class="nav-prev"';
 }
-add_filter('previous_posts_link_attributes', 'bluegray_post_prev', 999);
+add_filter( 'previous_posts_link_attributes', 'bluegray_post_prev', 999 );
 
 // Add class to comment nav
 function bluegray_comment_next() {
 	return 'class="comment-next"';
 }
-add_filter('next_comments_link_attributes', 'bluegray_comment_next', 999);
+add_filter( 'next_comments_link_attributes', 'bluegray_comment_next', 999 );
 
 function bluegray_comment_prev() {
 	return 'class="comment-prev"';
 }
-add_filter('previous_comments_link_attributes', 'bluegray_comment_prev', 999);
+add_filter( 'previous_comments_link_attributes', 'bluegray_comment_prev', 999 );
 
 // Custom excerpt lenght (default length is 55 words)
 function bluegray_excerpt_length( $length ) {
@@ -264,8 +264,8 @@ function bluegray_theme_customizer( $wp_customize ) {
 		'settings' => 'bluegray_content_type',
 		'type' => 'radio',
 		'choices' => array(
-			'yes' => __('Yes', 'bluegray'),
-			'no' => __('No', 'bluegray'),
+			'yes' => __( 'Yes', 'bluegray' ),
+			'no' => __( 'No', 'bluegray' ),
 		),
 	) ) );
 	$wp_customize->add_setting( 'bluegray_content_lenght', array(
@@ -296,8 +296,8 @@ function bluegray_theme_customizer( $wp_customize ) {
 		'settings' => 'bluegray_read_more',
 		'type' => 'radio',
 		'choices' => array(
-			'yes' => __('Yes', 'bluegray'),
-			'no' => __('No', 'bluegray'),
+			'yes' => __( 'Yes', 'bluegray' ),
+			'no' => __( 'No', 'bluegray' ),
 		),
 	) ) );
 	$wp_customize->add_setting( 'bluegray_read_more_label', array(
@@ -323,8 +323,8 @@ function bluegray_theme_customizer( $wp_customize ) {
 		'settings' => 'bluegray_post_image',
 		'type' => 'radio',
 		'choices' => array(
-			'yes' => __('Yes', 'bluegray'),
-			'no' => __('No', 'bluegray'),
+			'yes' => __( 'Yes', 'bluegray' ),
+			'no' => __( 'No', 'bluegray' ),
 		),
 	) ) );
 	$wp_customize->add_section( 'bluegray_footer_section', array(
@@ -356,8 +356,8 @@ function bluegray_theme_customizer( $wp_customize ) {
 		'settings' => 'bluegray_site_title',
 		'type' => 'radio',
 		'choices' => array(
-			'yes' => __('Yes', 'bluegray'),
-			'no' => __('No', 'bluegray'),
+			'yes' => __( 'Yes', 'bluegray' ),
+			'no' => __( 'No', 'bluegray' ),
 		),
 	) ) );
 	$wp_customize->add_setting( 'bluegray_tagline', array(
@@ -371,8 +371,8 @@ function bluegray_theme_customizer( $wp_customize ) {
 		'settings' => 'bluegray_tagline',
 		'type' => 'radio',
 		'choices' => array(
-			'yes' => __('Yes', 'bluegray'),
-			'no' => __('No', 'bluegray'),
+			'yes' => __( 'Yes', 'bluegray' ),
+			'no' => __( 'No', 'bluegray' ),
 		),
 	) ) );
 	// Header Image section
@@ -387,9 +387,9 @@ function bluegray_theme_customizer( $wp_customize ) {
 		'settings' => 'bluegray_header_image',
 		'type' => 'radio',
 		'choices' => array(
-			'yes' => __('Yes', 'bluegray'),
-			'no' => __('No', 'bluegray'),
+			'yes' => __( 'Yes', 'bluegray' ),
+			'no' => __( 'No', 'bluegray' ),
 		),
 	) ) );
 }
-add_action('customize_register', 'bluegray_theme_customizer');
+add_action( 'customize_register', 'bluegray_theme_customizer' );

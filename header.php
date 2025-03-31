@@ -1,6 +1,6 @@
 <?php
 /*
- * The header for displaying site title, tagline, logo, menu and header image.
+ * The header for the head element and for displaying site title, tagline, logo, menu and header image.
  */
 ?>
 
@@ -71,7 +71,7 @@
 		<?php endif; ?>
 		<?php if ( is_front_page() || ( ! is_front_page() && ( get_theme_mod( 'bluegray_header_image' ) == 'no' ) ) ) { ?>
 			<?php if ( get_header_image() ) { ?>
-				<img src="<?php header_image(); ?>" class="header-img" alt="bloginfo( 'name', 'display' ); ?>" />
+				<img src="<?php header_image(); ?>" class="header-img" alt="<?php bloginfo( 'name' ); ?>" />
 			<?php } ?>
 		<?php } ?>
 	</div>
